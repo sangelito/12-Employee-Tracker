@@ -68,3 +68,11 @@ function askQuestions() {
         }
     })
 }
+
+//view employees
+function viewEmployees() {
+    connection.query("SELECT * FROM employee", function (err, data) {
+        console.table(data);
+        askQuestions();
+    })
+}
