@@ -76,3 +76,11 @@ function viewEmployees() {
         askQuestions();
     })
 }
+
+//view departments 
+function viewDepartments() {
+    connection.query("SELECT * FROM department", function (err, data) {
+        console.table(data);
+        askQuestions();
+    })
+}
