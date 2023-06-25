@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const inquirer = require("inquirer");
-const table = require("console.table");
+// const table = require("console.table");
 
-//connection 
-var connection = mysql.createConnection({
+//connection to database 
+const db = mysql.createConnection({
     host: "localhost",
     port: 3001,
     user: "root",
