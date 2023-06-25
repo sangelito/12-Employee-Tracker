@@ -16,3 +16,21 @@ connection.connect(function (err) {
     console.log("connected as id " + connection.threadId + "\n");
     askQuestions();
 });
+
+//inquirer prompt: what would you like to do? 
+function askQuestions() {
+    inquirer.prompt({
+        message: "what would you like to do?",
+        type: "list",
+        choices: [
+            "view all employees",
+            "view all departments",
+            "add employee",
+            "add department",
+            "add role",
+            "update employee role",
+            "QUIT"
+        ],
+        name: "choice"
+    })
+}
