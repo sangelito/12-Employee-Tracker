@@ -8,15 +8,17 @@ const db = mysql.createConnection({
     user: "root",
     password: "123Pass!",
     database: "work_db"
-});
+},
+console.log(`Connected to the work_bd database.`)
+);
 // Port connection 
 const PORT = process.env.PORT || 3001;
 
-connection.connect(function (err) {
-    if (err) throw err;
-    console.log("connected as id " + connection.threadId + "\n");
-    askQuestions();
-});
+// connection.connect(function (err) {
+//     if (err) throw err;
+//     console.log("connected as id " + connection.threadId + "\n");
+//     askQuestions();
+// });
 
 //inquirer prompt: what would you like to do? 
 function askQuestions() {
