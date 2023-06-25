@@ -13,15 +13,15 @@ VALUES ("Legal");
 SELECT * FROM department;
 
 --roles
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES ("Salesman", 100000, 1);
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES ("Engineer", 150000, 2);
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES ("Financial Analyst", 120000, 3);
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES ("Accountant", 125000, 3);
-INSERT INTO role (title, salary, department_id)
+INSERT INTO roles (title, salary, department_id)
 VALUES ("Lawyer", 250000, 4);
 
 SELECT * FROM roles;
