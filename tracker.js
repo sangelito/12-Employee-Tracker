@@ -5,11 +5,12 @@ const inquirer = require("inquirer");
 //connection to database 
 const db = mysql.createConnection({
     host: "localhost",
-    port: 3001,
     user: "root",
     password: "123Pass!",
     database: "work_db"
 });
+// Port connection 
+const PORT = process.env.PORT || 3001;
 
 connection.connect(function (err) {
     if (err) throw err;
